@@ -28,7 +28,7 @@ int main(void) {
         scanf("%s", &carta1.codigo_carta);
 
         printf("Nome da cidade: ");
-        scanf("%s[^\n]", carta1.cidade);
+        scanf(" %[^\n]", carta1.cidade);
 
         printf("Populacao: ");
         scanf("%d", &carta1.populacao);
@@ -42,6 +42,7 @@ int main(void) {
         printf("Pontos turisticos: ");
         scanf("%d", &carta1.pontos_turisticos);
 
+        printf("\n");
 
         // Codigo da carta 2 para o usuario interagir com o teclado
         printf("Carta: 2\n");
@@ -53,7 +54,7 @@ int main(void) {
         scanf("%s", &carta2.codigo_carta);
 
         printf("Nome da cidade: ");
-        scanf("%s[^\n]", carta2.cidade);
+        scanf(" %[^\n]", carta2.cidade);
 
         printf("Populacao: ");
         scanf("%d", &carta2.populacao);
@@ -69,9 +70,9 @@ int main(void) {
 
 
         //Imprimindo na tela todos os dados das carta 1 e da carta 2
-       printf("\n======= Cartas cadastradas  =======\n");
+       printf("\n======= Cartas cadastradas  =======\n\n");
 
-       printf("Carta: 1\n");
+       printf("Carta: 1\n\n");
 
        printf("Estado: %c\n", carta1.estado);
        printf("Codigo: %c%s\n", carta1.estado, carta1.codigo_carta);
@@ -81,7 +82,7 @@ int main(void) {
        printf("PIB: %.2f\n", carta1.pib);
        printf("Numero de pontos turisticos: %d\n\n", carta1.pontos_turisticos);
 
-       printf("Carta: 2\n");
+       printf("Carta: 2\n\n");
 
 
        printf("Estado: %c\n", carta2.estado);
